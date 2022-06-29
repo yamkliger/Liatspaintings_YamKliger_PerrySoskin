@@ -31,21 +31,49 @@ function showSlides(n) {
 }
 /*--פונקציית השליחה-- */
 function shliha() {
+    var validity = validateEmail(document.getElementById("email").value);
     var fullname = document.getElementById("fullname").value;
     var email = document.getElementById("email").value;
     var phonenumber = document.getElementById("phonenumber").value;
     var topicselect = document.getElementById("topicselect").value;
     var content = document.getElementById("content").value;
-    if (fullname == "" || email == "" || phonenumber == "" || topicselect == "" || content == "") {
-        alert("יש למלא את כל השדות הדרושים");
-    }
+    if (email == "" && phonenumber.length==10) {
+        if (email == ""||fullname == "" || phonenumber == "" || topicselect == "" || content == "") {
+            alert("יש למלא את כל השדות הדרושים");
+        }
+    }  
     else {
-        alert("הטופס נשלח בהצלחה");
+        if (validity) {   //אם המייל תקין אז תבדוק את יתר השדות
+            if (phonenumber.length != 10) {
+                alert("הזן מספר טלפון תקין באורך 10 ספרות");
+            }
+            else {
+                if (fullname == "" || phonenumber == "" || topicselect == "" || content == "") {
+                    alert("יש למלא את כל השדות הדרושים");
+                }
+                else {
+                    alert("הטופס נשלח בהצלחה");
+                }
+            } 
+        }
+        else {
+            alert('הזן מייל תקין מהצורה name@___.com');
+        }
     }
+    
+}
 
+
+function validateEmail(emailField) {
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    if (reg.test(emailField) == false) {
+        return false;
+    }
+    return true;
 }
 
 function changeImage() {
+
     var image = document.getElementById('momworking');
     if (image.src.match("mompainting")) {
         image.src = "images/momworking.jpg";
