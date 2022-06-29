@@ -1,0 +1,796 @@
+﻿body { /*הגדרות עיצוב לכל  הדף*/
+    direction: rtl; /*נרצה שכל הטקסט יכתב מימין לשמאל*/
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    font-family: Assistant;
+    margin: 0px;
+    opacity:0;
+    transition: opacity 3s;
+    
+}
+
+.wellcome { /*הגדרות עיצוב לדף הבית*/
+    height: 1400px;
+    text-align: center;
+    font-weight: lighter;
+    position: relative;
+    margin:50px;
+}
+
+#welcomepicture { /*הגדרות עיצוב לתמונה של הקנבאס*/
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 45%;
+    position: relative;
+    top:150px;
+    background-repeat: no-repeat;
+}
+#bakbukliat { /*"הגדרות עיצוב לבקבוק שמוביל לעמוד "קצת עליי*/
+    position: relative;
+    bottom: 800px;
+    right: 270px;
+    height: 600px;
+    width: 600px;
+    color: black;
+    background-image: url("../images/bakbukbanana.png");
+    background-size: 180px 200px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+    #bakbukliat a {
+        opacity: 0.7;
+        
+    }
+    #bakbukliat a:hover { /*הגדרות עיצוב לבקבוק שמוביל לעמוד "קצת עליי" במעבר עכבר"*/
+    opacity: 1.0;
+    font-size:15px;
+    background-position: right;
+    cursor: pointer;
+    }
+#bakbukwomen { /*"הגדרות עיצוב לבקבוק שמוביל לעמוד "גלריית ציורי נשים" */
+    position: relative;
+    bottom: 1000px;
+    right: 840px;
+    height: 600px;
+    width: 600px;
+    color: black;
+    background-image: url("../images/bakbukpink.png");
+    background-size: 180px 200px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+    #bakbukwomen a {
+        opacity: 0.7;
+    }
+
+    #bakbukwomen a:hover { /*הגדרות עיצוב לבקבוק שמוביל לעמוד "ציורי נשים" במעבר עכבר"*/
+
+        opacity: 1.0;
+        font-size: 15px;
+        background-position: right;
+        cursor: pointer;
+    }
+
+#bakbukanimals { /*"הגדרות עיצוב לבקבוק שמוביל לעמוד "גלריית ציורי חיות" */
+    position: relative;
+    bottom: 1998px;
+    right: 580px;
+    height: 600px;
+    width: 600px;
+    color: black;
+    background-image: url("../images/bakbukgreen.png");
+    background-size: 180px 200px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+    #bakbukanimals a {
+        opacity: 0.7;
+    }
+    #bakbukanimals a:hover { /* הגדרות עיצוב לבקבוק שמוביל לעמוד "גלריית ציורי חיות" במעבר עכבר */
+        font-size: 15px;
+        background-position: right;
+        opacity: 1.0;
+        cursor: pointer;
+    }
+
+
+#bakbuknature { /* הגדרות עיצוב לבקבוק שמוביל לעמוד "גלריית ציורי טבע"  */
+    position: relative;
+    bottom: 1820px;
+    right: 640px;
+    height: 600px;
+    width: 600px;
+    color: black;
+    background-image: url("../images/bakbukbluelight.png");
+    background-size: 180px 200px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+    #bakbuknature a {
+        opacity: 0.7;
+    }
+
+        #bakbuknature a:hover { 
+            font-size: 15px;
+            background-position: right;
+            opacity: 1.0;
+            cursor: pointer;
+        }
+
+#bakbukcontact { /* הגדרות עיצוב לבקבוק שמוביל לעמוד "צור קשר"  */
+    position: relative;
+    bottom: 2810px;
+    right: 15px;
+    height: 600px;
+    width: 600px;
+    color: black;
+    background-image: url("../images/bakbukpruple.png");
+    background-size: 180px 200px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+    #bakbukcontact a {
+        opacity: 0.7;
+    }
+    #bakbukcontact a:hover { /* הגדרות עיצוב לבקבוק שמוביל לעמוד "צור קשר" במעבר עכבר */
+        font-size: 15px;
+        background-position: right;
+        opacity: 1.0;
+        cursor: pointer;
+    }
+#bakbukabout { /* הגדרות עיצוב לבקבוק שמוביל לעמוד "אודות"  */
+    position: relative;
+    bottom: 3025px;
+    right: 200px;
+    height: 600px;
+    width: 600px;
+    color: black;
+    background-image: url("../images/bakbukpinki.png");
+    background-size: 180px 200px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+    #bakbukabout a {
+        opacity: 0.7;
+    }
+    #bakbukabout a:hover { /* הגדרות עיצוב לבקבוק שמוביל לעמוד "אודות" במעבר עכבר */
+        font-size: 15px;
+        background-position: right;
+        opacity: 1.0;
+        cursor: pointer;
+    }
+
+#bakbukmap {
+    position: relative;
+    bottom: 3275px;
+    right: 600px;
+    height: 600px;
+    width: 600px;
+    color: black;
+    background-image: url("../images/bakbukblue.png");
+    background-size: 180px 200px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+    #bakbukmap > a {
+        opacity: 0.7;
+        position: relative;
+        left: 210px;
+        top: 310px;
+        font-size: 13px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+#bakbukmap a:hover { /* הגדרות עיצוב לבקבוק שמוביל לעמוד "מפת אתר" במעבר עכבר */
+    font-size: 15px;
+    background-position: right;
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+
+#bakbuknature > a, #bakbukanimals > a, #bakbukwomen > a { /* הגדרות עיצוב לקישורים שנמצאים בתוך הבקבוקים השמאליים  */
+    text-decoration: underline;
+    position: relative;
+    top: 310px;
+    right: 210px;
+    font-size: 13px;
+    font-weight: bold;
+}
+#bakbukliat > a, #bakbukcontact > a, #bakbukabout > a { /* הגדרות עיצוב לקישורים שנמצאים בתוך הבקבוקים הימניים  */
+    text-decoration: underline;
+    position: relative;
+    top: 310px;
+    left: 210px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+alt { /* הגדרות עיצוב לכל הטקסט החלופי - רלוונטי לגלריה  */
+    background-color: rgb(249,164,130);
+    font-family:Assistant;
+}
+
+#logo { /* הגדרות עיצוב ללוגו  */
+    margin-left: 5px;
+    height: 30px;
+    display: inline-block;
+    margin-bottom: 0px;
+    width: 40px;
+}
+#footerpicture:hover {
+    transform: rotate(350deg);
+    cursor:pointer;
+}
+footer { /* הגדרות עיצוב לפוטר של כל אחד מהעמודים  */
+    font-family: Assistant;
+    text-align: center;
+    background-color: rgb(249,164,130);
+    position: relative;
+    bottom: 0px
+}
+#footerpicture { /* הגדרות עיצוב ללוגו שמופיע בפוטר   */
+    width: 5%;
+    height: 5%;
+    text-align: center;
+}
+* {
+    box-sizing: border-box; /* נגדיר שהגובה והרוחב של כל אחד מהאלמנטים באתר יחושב תוך התחשבות בפאדינג ובבורדר   */
+    font-family: Assistant;
+}
+
+img { /* נגדיר  את הגובה והרוחב של התמונות שמופיעות מתחת לתמונה הנבחרת בגלרייה   */
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+}
+
+
+/* נגדיר את כל הדיב שמכיל בתוכו את כל הפרטים על התמונה כאלמנט יחסי  */
+.container {
+    position: relative;
+}
+
+/* ברירת המחדל של התמונות תהיה מוסתרות */
+.mySlides {
+    display: none;
+    left: 100px;
+    right: 400px;
+    text-align: center;
+    position:center;
+    
+}
+    .mySlides > img {
+        width: 40%;
+        height: 40%;
+    }
+    /* נשנה את העכבר ללחיץ כשאנו עוברים מעל תמונה*/
+    .cursor {
+        cursor: pointer;
+    }
+
+/* כפתורי קדימה ואחורה */
+.prev,
+.next {
+    cursor: pointer;
+    position: static;
+    display:inline-block;
+    top: 90%;
+    width: auto;
+    padding: 16px;
+    margin-bottom: 50px;
+    color:black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+
+}
+/* נמקם את כפתור קדימה בצד ימין  */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* נמקם את כפתור קדימה בצד שמאל  */
+.prev {
+    right: 50px;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* נגדיר הגדרות עיצוב לכפתורי קדימה ואחורה כאשר יש עליהם מעבר עכבר   */
+    .prev:hover,
+    .next:hover {
+        color: black;
+        background-color: rgb(249,164,130);
+        cursor:pointer;
+     
+    }
+
+/* נגדיר את העיצוב של התווית שאומרת לנו כמה תמונות עברנו מהגלרייה וכמה נשארו */
+.numbertext {
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Assistant;
+    background-color: white;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    right:400px;
+
+    
+}
+
+.demo cursor image1, .demo cursor image2, .demo cursor image3{
+    text-align:center;
+    position: center;
+    width:100%;
+}
+/* נגדיר עיצוב לתיאור התמונה */
+.caption-container {
+    text-align: center;
+    background-color: rgb(249,164,130);
+    padding: 2px 16px;
+    color: black;
+    position: relative;
+    width: 40%;
+    right: 456px;
+}
+/* נגדיר עיצוב לתמונות שנמצאות מתחת לתמונה הנבחרת בגלריית ציורי החיות */
+.row1 {
+    text-align: center;
+    position: relative;
+    width: 80%;
+    left: 151px;
+}
+/* נגדיר עיצוב לתמונות שנמצאות מתחת לתמונה הנבחרת בגלריית ציורי הנשים ובגלריית ציורי הטבע */
+.row {
+    text-align: center;
+    position: center;
+   
+}
+
+
+    /* נגדיר עיצוב שנמצא מתחת לתמונות שנמצאות מתחת לתמונה הנבחרת בגלריית ציורי הנשים ובגלריית ציורי הטבע */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+    /* עיצוב לשורה של התמונות מתחת לתמונה הנבחרת */
+    .column {
+    float: left;
+    width: 16.66%;
+   position:center;
+   display:inline-block;
+}
+        .column > img {
+            width: 100%;
+        }
+        /* נוסיף שקיפות לתמונה הלא נבחרת */
+        .demo {
+            opacity: 0.6;
+            cursor: pointer;
+        }
+    /* נשנה את השקיפות ברגע שלוחצים על התמונה */
+    .active,
+    .demo:hover {
+        opacity: 1;
+        cursor:pointer;
+    }
+/* צור קשר בעמוד אודות */
+#zorkeser {
+    border: 2px solid #ccc;
+    width: 502px;
+    background-color: rgb(249,164,130);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0 0 5px rgba(0,0,0,0.9);
+    background-color: rgb(249,164,130);
+}
+/* אזור כתיבת טקסט בעמוד אודות */
+textarea {
+    width: 50%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background-color: white;
+    resize: none;
+    text-align: right;
+}
+
+h1 {
+    font-size: 60px;
+    color: rgb(0, 115, 153);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 3px rgba(170,170,170,0.7);
+}
+
+h2 {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* אזור פנייה בעמוד אודות */
+#pnia {
+    text-align:center;
+    padding: 24px;
+    font-size: 25px;
+}
+/* סימון כוכביות אדומות בעמוד אודות */
+.red {
+    color: red;
+}
+
+
+header {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 95%;
+    background-position: top center;
+    height: 90px;
+}
+/* עיצוב של הטקסט בתוך הסיפור של ליאת */
+#sipurliat > p {
+    text-align: right;
+    font-size: 20px;
+    padding: 2px;
+    margin: 10px;
+}
+/* עיצוב של הטקסט הסיפור של ליאת */
+#sipurliat {
+    position: relative;
+    right: 490px;
+    width: 500px;
+    border: 10px solid rgb(249,164,130);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 7px 7px 7px 7px #888888, 7px 7px 7px 7px #888888;
+    background-color: white;
+}
+/* עיצוב של הטקסט השינוי של ליאת */
+#changeliat > p {
+    text-align: center;
+    font-size: 20px;
+    padding: 0px;
+    margin: 10px;
+}
+/* עיצוב של  השינוי של ליאת */
+#changeliat {
+    position: relative;
+    right: 490px;
+    width: 500px;
+    border: 10px solid rgb(249,164,130);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 7px 7px 7px 7px #888888, 7px 7px 7px 7px #888888;
+    background-color: white;
+}
+/* עיצוב של  החלק בו ליאת מדברת על ציור ליאת */
+#aboutpainting {
+    position: relative;
+    right: 490px;
+    width: 500px;
+    border: 10px solid rgb(249,164,130);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 7px 7px 7px 7px #888888, 7px 7px 7px 7px #888888;
+    background-color: white;
+}
+    #aboutpainting > p {
+        text-align: right;
+        font-size: 20px;
+        padding: 2px;
+        margin: 10px;
+    }
+
+/* עיצוב של  החלק בו יש שיר */
+.music {
+    position: relative;
+    right: 490px;
+    width: 500px;
+    border: 10px solid rgb(249,164,130);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 7px 7px 7px 7px #888888, 7px 7px 7px 7px #888888;
+    background-color: white;
+}
+    .music > p {
+        text-align: right;
+        font-size: 20px;
+        padding: 2px;
+        margin: 10px;
+    }
+#song {
+    position: relative;
+   right:20px;
+}
+/* עיצוב של  התמונה שלה עובדת+ מעבר עכבר */
+
+#picturework {
+    position: relative;
+    right: 490px;
+    width: 500px;
+    border: 10px solid rgb(249,164,130);
+    border-radius: 20px;
+    padding: 0px;
+    margin: 20px;
+box-shadow: 7px 7px 7px 7px #888888, 7px 7px 7px 7px #888888;
+}
+#picturework>img{
+    width:100%;
+    height:100%;
+
+}
+    #picturework > img:hover {
+        width: 100%;
+        height: 100%;
+        cursor:pointer;
+    }
+/* הגדרת עיצוב של התפריט הראשי */
+nav {
+    width: 110%;
+    height: 100%;
+    position: relative;
+    left: 50px;
+    bottom: 50px;
+
+}
+
+    /* הגדרת עיצוב של רשימת הלינקים בתפריט הניווט הראשי */
+nav ul {
+    margin: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+    /* הגדרת עיצוב של רשימת הלינקים בתפריט הניווט הנפתח של גלריית ציורים */
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            width: 100%;
+            padding-top: 16px;
+            top: 20px;
+            left: 0;
+        }
+
+
+nav ul li:hover > ul {
+    /*/מיקום התבניות שהתפריט של גלריית ציורים נפתח/ */
+    display: block;
+    width: 83%;
+    padding-top: 0;
+    padding-right: 0px;
+    margin-top: 11px;
+    margin-left: 29px;
+    cursor:pointer;
+}
+
+   
+
+    /*/הגדרות עיצוב של כל פריט ברשימה של התפריט הניווט הראשי / */
+    nav ul li {
+        position: relative;
+        margin-top: 50px;
+        display: block;
+        color: black;
+        background-color: rgb(249,164,130);
+        text-decoration: none;
+        text-align: center;
+        border-left: 1px solid black;
+        flex: 1;
+        font-size: 25px;
+        display: inline-block;
+        float: right;
+    }
+
+        /*/הגדרות עיצוב בעת מעבר עכבר על כל לינק ברשימה של התפריט הניווט הראשי / */
+nav ul li a:hover {
+    cursor: pointer;
+    color: white;
+}
+
+/*/הגדרות עיצוב בעת מעבר עכבר על הלוגו בתפריט הניווט הראשי / */
+#logo:hover {
+    transform: rotate(20deg);
+}
+
+/*/הגדרות עיצוב בעת לחיצה על לינק בתפריט הניווט הראשי / */
+a:active {
+    color: rgb(0, 115, 153);
+    background-color: transparent;
+    text-decoration: underline;
+}
+/*/הגדרות עיצוב של לינק בתפריט הניווט הראשי / */
+a:link {
+    color: rgb(85,26,139);
+}
+
+/*להוציא מסגרת מהלינק האחרון בתפריט ניווט */
+nav li:last-child {
+    border-left: none;
+    text-decoration: none;
+}
+/*להוציא מסגרת מהלינק האחרון בתפריט ניווט */
+nav li:first-child {
+    border-right: none;
+    text-decoration: none;
+}
+
+
+
+nav ul li ul li a {
+    border: none;
+    margin: 0;
+    float: right;
+    text-align: right;
+    width: 100%;
+    text-decoration: none;
+}
+
+nav ul li ul li {
+    /*    /עיצוב פתיחת תפריט במעבר עכבר/
+*/ border: none;
+    background-color: rgb(249,164,130);
+    color: black;
+    margin: 0;
+    padding: 10px;
+    text-decoration: none;
+    width: 100%;
+}
+
+    nav ul li ul li:hover {
+        /*/הגדלת אותיות במעבר עכבר/ */
+        font-weight: 400;
+        text-align: right;
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: rgb(250,170,160);
+    }
+
+* {
+    font-family: Assistant;
+    text-decoration: none;
+}
+/*/הגדרת עיצוב של הקישורים במפת אתר/ */
+.ulMap {
+    display: flex;
+    text-align: right;
+    margin: 20px;
+    display: inline-block;
+    list-style-position: outside;
+    vertical-align: text-top;
+    text-decoration: underline;
+    position: relative;
+    right: 200px;
+    list-style-image: url('../images/paintbrush.jpg');
+}
+
+/*  הגדרת עיצוב של הקישורים במפת אתר שהם גם כותרת */
+.liC:hover {
+    list-style-image: url('../images/paintbrush_rotate.jpg');
+}
+
+/*  הגדרת עיצוב של הקישורים בתפריט הפנימי במעבר עכבר ובמצב רגיל */
+#animals:hover, #nature:hover, #women:hover {
+    list-style-image: url('../images/paintbrush_rotate.jpg');
+}
+
+.ulMap_gallery:hover {
+    cursor:not-allowed;
+}
+#animals {
+    text-decoration: underline;
+    cursor: no-drop;
+    margin-right: 20px;
+}
+#women {
+    text-decoration: underline;
+    cursor: no-drop;
+    margin-right: 20px;
+}
+#nature {
+    text-decoration: underline;
+    cursor: no-drop;
+    margin-right: 20px;
+}
+/* הגדרת עיצוב של הרשימה במפת אתר */
+#list {
+    position: relative;
+    list-style-position: inside;
+    font-size: 20px;
+    background-color: white;
+    border: 10px solid rgb(249,164,130);
+    border-radius: 20px;
+    width: 1200px;
+    right: 160px;
+    box-shadow: 7px 7px 7px 7px #888888, 7px 7px 7px 7px #888888;
+}
+
+/* הגדרת עיצוב של כל הפירורי לחם */
+.right {
+    text-align: right;
+    margin-top: 50px;
+    
+}
+/* הגדרת עיצוב של הקישור בפירורי לחם */
+.kishor {
+    text-decoration-line: underline;
+    cursor:pointer;
+}
+/* הגדרת עיצוב של כל מילה בפירורי לחם */
+.textbreadcrumbs {
+    display: inline-block;
+    text-align: right;
+    font-size: 16px;  
+    font-family:Assistant;
+}
+/* הגדרת עיצוב של כל החלקים השונים בעמוד אודות */
+.odot {
+    position: relative;
+    right: 460px;
+    width: 600px;
+    border: 10px solid rgb(249,164,130);
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 7px 7px 7px 7px #888888, 7px 7px 7px 7px #888888;
+}
+    /* הגדרת עיצוב של המילים המודגשות בעמוד אודות  */
+    .odot > b {
+        text-decoration: underline;
+        font-size:20px;
+    }
+
+
+
+/*נגדיר עיצוב לכל הקישורים לעמודים שפיתחנו באתר  */
+.aboutpages > ul > li {
+    text-decoration: underline;
+
+}
+/*נגדיר עיצוב לטקסט על ים ופארי  */
+ .usText{
+    position:relative;
+    text-align:center;
+    display:inline-block;
+    right:70px;
+}
+/*נגדיר עיצוב לתמונה של ים ופארי  */
+.us {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+/*נגדיר עיצוב לתמונה של הלוגו של המכון הטכנולוגי חולון   */
+.imghit {
+    margin: 10px;
+    position: relative;
+    right: 150px;
+}
+/*נגדיר עיצוב לקישור של הפקולטה לטכנולוגיות למידה באתר של  המכון הטכנולוגי חולון   */
+.kishorhit {
+    margin: 10px;
+    position: relative;
+    right: 170px;
+    text-decoration:underline;
+}

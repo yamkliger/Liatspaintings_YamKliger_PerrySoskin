@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>גלריית ציורי נשים | Liats' paintings</title>
+    <meta name="description" content="דף הבית" />
+    <meta name="keywords" content="Liat,tzur, Kliger, ציורי נשים, women paintings, girl paintings,ציור, הזמנה, אישית, קנבס, ציורים,קליגר,צור , ליאת" />
+    <meta name="author" content="פארי סוסקין וים קליגר" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link href="styles/StyleSheet2.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+
+    <link rel="icon" href="images/logoliat.png" sizes="12xp" type="image">
+</head>
+<body onload="showSlides(1), document.body.style.opacity='1'">
+
+
+    <header>
+    
+            <nav role="navigation" class="background" aria-label="תפריט ניווט ראשי">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img id="logo" alt="לוגו -Liats' paintings- מעבר לדף הבית" src="images/logoliat.png" />
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="aboutliat.html">קצת עליי</a>
+                    </li>
+
+                    <li>
+                        <a href="#">גלריות ציורים ↓</a>
+                        <ul>
+                            <li>
+                                <a href="galleryanimals.html">גלריית ציורי חיות</a>
+                            </li>
+                            <li>
+                                <a href="gallerynature.html">גלריית ציורי טבע</a>
+                            </li>
+                            <li>
+                                <a href="gallerywomenen.html">גלריית ציורי נשים</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contactUs.html">צרו קשר</a>
+                    </li>
+                    <li>
+                        <a href="about.html">אודות</a>
+                    </li>
+                    <li>
+                        <a href="siteMap.html">מפת אתר</a>
+                    </li>
+                </ul>
+            </nav>
+       
+    </header>
+    <br />
+    <!-- פירורי לחם -->
+    <article>
+        <div class="right">
+            <p class="textbreadcrumbs">
+                <a href="index.html" class="kishor">דף הבית</a>
+            </p>
+            <p class="textbreadcrumbs">>></p>
+            <p class="textbreadcrumbs">
+                <a href="gallerywomen.html" class="kishor">גלרית ציורי נשים</a>
+        </div>
+    </article>
+
+    <h1>ציורי נשים</h1>
+    <h2>
+        אני מאוד אוהבת לצייר נשים ליד ובתוך המים. <br />
+        למים יש כוח מאגי שמשפיע על כל החושים שלנו.
+    </h2>
+    <br />
+
+    <br />
+    <div class="container">
+        <div class="mySlides">
+            <div class="numbertext">6 / 1</div>
+            <a class="prev" onclick="plusSlides(1)">❮</a>
+            <img src="images/h2O.jpg" alt="אישה שוחה בים">
+            <a class="next" onclick="plusSlides(-1)">❯</a>
+
+
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 2</div>
+            <a class="prev" onclick="plusSlides(1)">❮</a>
+            <img src="images/momandchild.jpg" alt="אם מרימה את בנה ">
+            <a class="next" onclick="plusSlides(-1)">❯</a>
+
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 3</div>
+            <a class="prev" onclick="plusSlides(1)">❮</a>
+            <img src="images/shirjumping.jpg" alt="נערה קופצת בחוף">
+            <a class="next" onclick="plusSlides(-1)">❯</a>
+
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">6 / 4</div>
+            <a class="prev" onclick="plusSlides(1)">❮</a>
+            <img src="images/womensinthepool.jpg" alt="רוגע בבריכה">
+            <a class="next" onclick="plusSlides(-1)">❯</a>
+
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">6 / 5</div>
+            <a class="prev" onclick="plusSlides(1)">❮</a>
+            <img src="images/momandyam.jpg" alt="אם וביתה התינוקת">
+            <a class="next" onclick="plusSlides(-1)">❯</a>
+        </div>
+
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <a class="prev" onclick="plusSlides(1)">❮</a>
+            <img src="images/babyshir.jpg" alt="ילדה קטנה משחקת בחול">
+            <a class="next" onclick="plusSlides(-1)">❯</a>
+
+        </div>
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor image1" src="images/h2O.jpg" onclick="currentSlide(1)" alt="אישה שוחה בים
+                      -  40X60 סנטימטר">
+            </div>
+            <div class="column">
+
+                <img class="demo cursor image2" src="images/momandchild.jpg" onclick="currentSlide(2)" alt="אם מרימה את בנה
+                     -  20X40 סנטימטר">
+            </div>
+            <div class="column">
+                <img class="demo cursor image3" src="images/shirjumping.jpg" onclick="currentSlide(3)" alt="נערה קופצת בחוף
+                     -  50X50 סנטימטר">
+            </div>
+            <div class="column">
+                <img class="demo cursor image4" src="images/womensinthepool.jpg" onclick="currentSlide(4)" alt="רוגע בבריכה
+                     -  40X60 סנטימטר">
+            </div>
+            <div class="column">
+                <img class="demo cursor image5" src="images/momandyam.jpg" onclick="currentSlide(5)" alt="אם וביתה התינוקת
+                     -  40X60 סנטימטר">
+            </div>
+            <div class="column">
+                <img class="demo cursor image6" src="images/babyshir.jpg" onclick="currentSlide(6)" alt=" ילדה קטנה משחקת בחול
+                     -  40X60 סנטימטר">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <hr />
+
+        <p id="liatpaintings"> ©️ כל הזכויות שמורות לצוות Liat's paintings  </p>
+        <a href="index.html">
+            <img id="footerpicture" src="../images/logoliat.png" alt="תמונה של לוגו האתר" />
+        </a>
+    </footer>
+
+
+
+</body>
+</html>

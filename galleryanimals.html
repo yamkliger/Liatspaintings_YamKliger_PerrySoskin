@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>גלריית ציורי חיות | Liats' paintings</title>
+    <meta name="description" content="גלריית ציורי חיות" />
+    <meta name="keywords" content="Liat,tzur, Kliger, paintings, oil colors, ציור, הזמנה אישית, קנבס, ציורים,קליגר,צור, ציורי חיות, animals paintings , ליאת" />
+    <meta name="author" content="פארי סוסקין וים קליגר" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+    <!-- CSS -->
+   
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/StyleSheet2.css" rel="stylesheet" />
+   
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+  
+    <link rel="icon" href="images/logoliat.png" sizes="12xp" type="image">
+</head>
+
+    <body onload="showSlides(1), document.body.style.opacity='1'" >
+
+        <header>
+           
+                <nav role="navigation" class="background" aria-label="תפריט ניווט ראשי">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <img id="logo" alt="לוגו -Liats' paintings- מעבר לדף הבית" src="images/logoliat.png" />
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="aboutliat.html">קצת עליי</a>
+                        </li>
+
+                        <li>
+                            <a href="#">גלריות ציורים ↓</a>
+                            <ul>
+                                <li>
+                                    <a href="galleryanimals.html">גלריית ציורי חיות</a>
+                                </li>
+                                <li>
+                                    <a href="gallerynature.html">גלריית ציורי טבע</a>
+                                </li>
+                                <li>
+                                    <a href="gallerywomen.html">גלריית ציורי נשים</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contactUs.html">צרו קשר</a>
+                        </li>
+                        <li>
+                            <a href="about.html">אודות</a>
+                        </li>
+                        <li>
+                            <a href="siteMap.html">מפת אתר</a>
+                        </li>
+                    </ul>
+                </nav>
+            
+        </header>
+        <br />
+
+        <!-- פירורי לחם -->
+        <article>
+            <div class="right">
+                <p class="textbreadcrumbs">
+                    <a href="index.html" class="kishor">דף הבית</a>
+                </p>
+                <p class="textbreadcrumbs">>></p>
+                <p class="textbreadcrumbs">
+                    <a href="galleryanimals.html" class="kishor">גלרית ציורי חיות</a>
+            </div>
+        </article>
+
+
+
+
+
+
+
+
+        <h1>גלריית ציורי חיות</h1>
+        <h2>
+            בחרתי לצייר חיות מתוך התעניינות ביצירת חיים על הבד, <br />
+            תוך משחקי צבעים ואור
+        </h2>
+        <br />
+
+        <br />
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">3 / 1</div>
+                <a class="prev" onclick="plusSlides(1)">❮</a>
+                <img src="images/deer.jpg" alt="צבי בן">
+                <a class="next" onclick="plusSlides(-1)">❯</a>
+
+
+
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 2</div>
+                <a class="prev" onclick="plusSlides(1)">❮</a>
+                <img src="images/bigdeer.jpg" alt="צבי אבא">
+                <a class="next" onclick="plusSlides(-1)">❯</a>
+
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <a class="prev" onclick="plusSlides(1)">❮</a>
+                <img src="images/turtle.jpg" alt="צב ים והחיים באוקיינוס">
+                <a class="next" onclick="plusSlides(-1)">❯</a>
+
+            </div>
+
+
+
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row1">
+                <div class="column">
+
+                    <img class="demo cursor image1" src="images/deer.jpg" onclick="currentSlide(1)" alt="צבי בן
+                   -  40X60 סנטימטר ">
+                </div>
+                <div class="column">
+                    <img class="demo cursor image2" src="images/bigdeer.jpg" onclick="currentSlide(2)" alt="צבי אבא
+                      -  30X67 סנטימטר">
+                </div>
+                <div class="column">
+                    <img class="demo cursor image3" src="images/turtle.jpg" onclick="currentSlide(3)" alt="צב ים והחיים באוקיינוס
+                      -  30X67 סנטימטר">
+                </div>
+
+            </div>
+        </div>
+
+   
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <footer>
+
+            <hr />
+
+            <p id="liatpaintings"> ©️ כל הזכויות שמורות לצוות Liat's paintings  </p>
+            <a href="index.html">
+                <img id="footerpicture" src="../images/logoliat.png" alt="תמונה של לוגו האתר" />
+            </a>
+        </footer>
+
+
+
+    </body>
+</html>

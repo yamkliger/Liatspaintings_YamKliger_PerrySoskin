@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>צור קשר | Liats' paintings</title>
+    <meta name="description" content="דף הבית" />
+    <meta name="keywords" content="Liat,tzur, Kliger, paintings, oil colors, ציור, הזמנה אישית, קנבס, ציורים,קליגר,צור ,שיתוף פעולה, צור קשר, contact ליאת" />
+    <meta name="author" content="פארי סוסקין וים קליגר" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+    <!-- CSS/>-->
+
+
+   
+    <link href="styles/StyleSheet2.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/JavaScript.js"></script>
+   <script src="jScripts/jquery-1.12.0.min.js"></script>
+   
+    <link rel="icon" href="images/logoliat.png" sizes="12xp" type="image">
+
+</head>
+<body onload="document.body.style.opacity='1'">
+
+    <header>
+        
+            <nav role="navigation" class="background" aria-label="תפריט ניווט ראשי">
+                <ul>
+                    <li>
+                        <a href="about.html">
+                            <img id="logo" alt="לוגו -Liats' paintings- מעבר לדף הבית" src="images/logoliat.png" />
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="aboutliat.html">קצת עליי</a>
+                    </li>
+
+                    <li>
+                        <a href="#">  גלריות ציורים ↓</a>
+                        <ul>
+                            <li>
+                                <a href="galleryanimals.html">גלריית ציורי חיות</a>
+                            </li>
+                            <li>
+                                <a href="gallerynature.html">גלריית ציורי טבע</a>
+                            </li>
+                            <li>
+                                <a href="gallerywomen.html">גלריית ציורי נשים</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contactUs.html">צרו קשר</a>
+                    </li>
+                    <li>
+                        <a href="about.html">אודות</a>
+                    </li>
+                    <li>
+                        <a href="siteMap.html">מפת אתר</a>
+                    </li>
+                </ul>
+            </nav>
+      
+    </header>
+    <br />
+    <!-- פירורי לחם -->
+    <article>
+        <div class="right">
+            <p class="textbreadcrumbs">
+                <a href="index.html" class="kishor">דף הבית</a>
+            </p>
+            <p class="textbreadcrumbs">>></p>
+            <p class="textbreadcrumbs">
+                <a href="contactUs.html" class="kishor">צור קשר</a>
+        </div>
+    </article>
+
+    <article>
+        <h1 class="contact">צור קשר</h1>
+        <div id="pnia">
+            <div>
+                <p>
+                    מעוניינים ליצור קשר/ לרכוש את אחד הציורים/ להזמין ציור בהזמנה אישית?
+
+                    <br />
+                    נשמח שתכתבו לנו!
+                    <br />
+
+                </p>
+            </div>
+
+            <form method="post" id="form">
+                <!---===STR======== טופס יצירת קשר ==============-->
+                <input type="hidden" id="myEmail" name="name" value="yam.kliger@gmail.com" />
+
+                <div id="zorkeser">
+
+                    <div>
+                        <label for="fullname">
+                            <span class="red">*</span> שם מלא:
+                        </label>
+                        <br />
+                        <input type="text" id="fullname" name="fullname" aria-required="true"
+                               autocomplete="on" role="alert" title="הכנס את שמך" aria-invalid="true" />
+                    </div>
+
+                    <br />
+                    <div>
+                        <label for="email">
+                            <span class="red">*</span> דואר אלקטרוני:
+                        </label>
+                        <br />
+                        <input type="email" id="email" name="email"
+                          aria-required="true" autocomplete="on" title="הכנס את הדואר האלקטרוני שלך" aria-invalid="true" />
+                    </div>
+                    <br />
+                    <div>
+                        <label for="phonenumber">
+                            <span class="red">*</span> מספר טלפון:
+                        </label>
+                        <br />
+                        <input type="number" id="phonenumber" name="phonenumber"
+                          aria-required="true" autocomplete="on" aria-describedby="int1" title="הכנס את מספר הטלפון שלך" aria-invalid="true" />
+
+                        <p id="int1">הכנס מספרים בלבד! </p>
+                    </div>
+                    <br />
+                    <div>
+                        <label for="topic">
+                            <span class="red">*</span> סוג פניה:
+                            <br />
+                            <select id="topicselect" name="topicselect" placeholder="בחר סוג פניה" required aria-required="true" title="בחר את נושא הפניה"
+                                    aria-invalid="true">
+                                <option value="1" disabled selected>בחר את נושא פניה</option>
+                                <option value="2">מעוניין/ת ליצור שיתוף פעולה</option>
+                                <option value="3">מעוניין/ת לרכוש את אחד הציורים</option>
+                                <option value="4">מעוניין/ת להזמיו ציור בהזמנה אישית</option>
+                                <option value="5">אחר</option>
+                            </select>
+                        </label>
+                    </div>
+                    <br />
+
+                    <div>
+                        <label for="content">
+                            <span class="red">*</span> תוכן ההודעה:
+                        </label>
+                        <br />
+                        <textarea id="content" name="content" rows="10" required aria-required="true" title="הכנס/י את תוכן ההודעה" aria-invalid="true"></textarea>
+                    </div>
+                    <br />
+                    <div>
+                        <input id="Button1" type="button" onclick="shliha()" value="שליחה" />
+                        <input type="reset" name="reset1" value="ניקוי טופס">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </article>
+    
+    <footer>
+        <hr />
+
+        <p id="liatpaintings"> ©️ כל הזכויות שמורות לצוות Liat's paintings  </p>
+        <a href="index.html">
+            <img id="footerpicture" src="../images/logoliat.png" alt="תמונה של לוגו האתר" />
+        </a>
+    </footer>
+
+
+</body>
+</html>
